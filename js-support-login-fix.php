@@ -14,7 +14,7 @@
 function register_fix_js_support_login() {
 	wp_enqueue_script(
 		'fix_js_support_login',
-		'./js-support-login-fix.js',
+		plugins_url( 'js-support-login-fix.js' , __FILE__ ),
 		array()
 	);
 }
